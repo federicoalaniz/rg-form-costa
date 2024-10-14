@@ -20,9 +20,6 @@
     accent-color: orange !important;
 }
 
-.sb .selectbox .display{
-    border-radius: 5px m !important;
-}
 
 input {
     border-radius: 5px !important;
@@ -39,7 +36,7 @@ label {
     font-size: large !important;
 }
 
-input[type='checkbox'] {
+input[type='checkbox'], [type='radio'] {
     accent-color: orange !important;
     width: 20px !important;
     height: 20px !important;
@@ -48,14 +45,6 @@ input[type='checkbox'] {
 .selectbox .display {
     border-radius: 5px !important;
     font-size: 20px !important;
-    padding: 20px 10px !important;
-}
-div .sb.selectbox:first-child {
-    border-radius: 5px !important;
-    font-size: 20px !important;
-    border-color: darkgray;
+    padding: 5px 10px !important;
 }
 
-.arrow-btn {
-    background-color: orange !important;
-}
