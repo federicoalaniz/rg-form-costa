@@ -3,5 +3,5 @@ body {
     background-color: aqua;
 }
 .ui-controlgroup .ui-controlgroup-item {
-    border-color: red
+    border-color: red !important
 }
