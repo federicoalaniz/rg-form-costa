@@ -36,7 +36,7 @@ input::placeholder {
 }
 
 label {
-    font-size: medium !important;
+    font-size: large !important;
 }
 
 input[type='checkbox'] {
