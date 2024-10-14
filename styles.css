@@ -22,3 +22,13 @@
 .sb .selectbox .display{
     border-radius: 5px m !important;
 }
+
+input {
+    border-radius: 5px !important;
+    font-size: 15px;
+
+}
+
+input::placeholder {
+    font-size: 15px;
+}
