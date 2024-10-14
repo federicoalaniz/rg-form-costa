@@ -55,6 +55,6 @@ input[type='checkbox'], [type='radio'] {
     background-color: orange;
 }
 
-li {
+li div div{
     font-size: 20px;
 }
