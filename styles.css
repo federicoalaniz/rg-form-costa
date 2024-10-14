@@ -3,5 +3,6 @@ body {
     background-color: aqua;
 }
 .ui-controlgroup .ui-controlgroup-item {
-    border-color: red !important
+    border-color: yellowgreen !important;
+    border-width: 2px;
 }
