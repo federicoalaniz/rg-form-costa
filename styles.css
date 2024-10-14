@@ -1,8 +1,12 @@
 /* Hoja de estilos para el form de Pasajes a la costa de RG */
 
 .ui-controlgroup .ui-controlgroup-item {
-    border-color: orange !important;
     border-width: 2px;
     border-radius: 10px;
-    background-color: white;
+    background-color: white !important; 
+
+}
+
+.ui-controlgroup .ui-controlgroup-item :hover {
+    border-color: orange !important;
 }
