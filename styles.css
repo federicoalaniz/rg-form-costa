@@ -15,6 +15,6 @@
     border-color: orange !important;
 }
 
-.ui-checkboxradio-icon {
+.ui-checkboxradio-icon .ui-corner-all .ui-icon .ui-icon-background .ui-icon-blank {
     accent-color: orange !important;
 }
