@@ -38,3 +38,9 @@ input::placeholder {
 label {
     font-size: medium !important;
 }
+
+input[type='checkbox'] {
+    accent-color: orange !important;
+    width: 20px !important;
+    height: 20px !important;
+}
