@@ -57,10 +57,12 @@ input[type='checkbox'], [type='radio'] {
 }
 
 .selectbox .display .arrow_btn span {
-    left: 17.5px;
-    top: 17.5px;
+    left: 17.5px !important;
+    top: 17.5px !important;
 }
 
 li{
-    font-size: 15px !important;
+    font-size: 20px !important;
 }
+
+
