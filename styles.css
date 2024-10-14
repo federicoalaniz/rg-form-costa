@@ -59,6 +59,20 @@ input[type='checkbox'], [type='radio'] {
     background-color: transparent;
     border: none;
 }
+.selectbox .display .arrow_btn:hover{
+    height: 37px !important;
+    width: 35px !important;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+.selectbox .display .arrow_btn:active{
+    height: 37px !important;
+    width: 35px !important;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
 
 .selectbox .display .arrow_btn span {
     left: 17.5px !important;
@@ -68,12 +82,5 @@ input[type='checkbox'], [type='radio'] {
 li{
     font-size: 20px !important;
 }
-li:hover {
-    background-color: sandybrown !important;
-    border: none !important;
-}
-li:active {
-    background-color: sandybrown !important;
-    border: none !important;
-}
+
 
