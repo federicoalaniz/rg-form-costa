@@ -98,3 +98,6 @@ table {
     font-size: 20px !important;
 }
 
+tbody:nth-child(2) {
+    background-color: green;
+} 
