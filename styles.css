@@ -8,6 +8,7 @@
     background-color: white !important;
     color: #10004f !important;
     font-size: 20px !important;
+    font-weight: 400 !important;
 
 }
 
@@ -25,10 +26,12 @@
 
 input {
     border-radius: 5px !important;
-    font-size: 15px !important;
+    font-size: 18px !important;
+
+    border-width: thin !important;
 
 }
 
 input::placeholder {
-    font-size: 15px !important;
+    font-size: 18px !important;
 }
