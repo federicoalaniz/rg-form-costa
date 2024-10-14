@@ -68,7 +68,11 @@ input[type='checkbox'], [type='radio'] {
 li{
     font-size: 20px !important;
 }
-li:hover li:active{
+li:hover {
+    background-color: sandybrown !important;
+    border: none !important;
+}
+li:active {
     background-color: sandybrown !important;
     border: none !important;
 }
