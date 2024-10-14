@@ -52,9 +52,15 @@ input[type='checkbox'], [type='radio'] {
     height: 35px !important;
     width: 35px !important;
     background-image: none;
-    background-color: orange;
+    background-color: transparent;
+    border: none;
 }
 
-li div div{
-    font-size: 20px;
+.selectbox .display .arrow_btn span {
+    left: 17.5px;
+    top: 17.5px;
+}
+
+li{
+    font-size: 15px !important;
 }
