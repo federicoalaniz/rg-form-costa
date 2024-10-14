@@ -26,12 +26,11 @@
 
 input {
     border-radius: 5px !important;
-    font-size: 18px !important;
-
+    font-size: 20px !important;
     border-width: thin !important;
 
 }
 
 input::placeholder {
-    font-size: 18px !important;
+    font-size: 20px !important;
 }
