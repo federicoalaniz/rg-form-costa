@@ -1,5 +1,7 @@
 /* Hoja de estilos para el form de Pasajes a la costa de RG */
-
+.ui-controlgroup .ui-controlgroup-horizontal .ui-helper-clearfix {
+    gap: 5px;
+}
 .ui-controlgroup .ui-controlgroup-item {
     border-width: 2px !important;
     border-radius: 10px !important;
@@ -10,4 +12,8 @@
 
 .ui-controlgroup .ui-controlgroup-item:hover {
     border-color: orange !important;
+}
+
+.ui-checkboxradio-icon {
+    accent-color: orange !important;
 }
