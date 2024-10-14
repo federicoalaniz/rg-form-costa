@@ -51,4 +51,6 @@ input[type='checkbox'], [type='radio'] {
 .selectbox .display .arrow_btn{
     height: 35px !important;
     width: 35px !important;
+    background-image: none;
+    background-color: orange;
 }
