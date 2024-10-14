@@ -26,11 +26,14 @@ input {
     font-size: 20px !important;
     border-width: thin !important;
     height: 37px !important;
+    border-color: gray !important;
 
 }
 
 input::placeholder {
     font-size: 20px !important;
+    color: gray !important;
+    font-weight: 300 !important;
 }
 
 label {
