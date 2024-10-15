@@ -110,3 +110,7 @@ tbody:nth-child(2) {
 label.ui-button.ui-widget.ui-checkboxradio-radio-label.ui-controlgroup-item.ui-checkboxradio-label.ui-corner-left {
     margin-right: 30px;
 }
+
+td#_sentido {
+    background-color: aqua !important;
+}
