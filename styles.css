@@ -6,9 +6,12 @@
     color: #10004f !important;
     font-size: 20px !important;
     font-weight: 400 !important;
-    padding: 10px 20px !important;
+    /* padding: 10px 20px !important; */
     height: 60px !important;
     width: 350px !important;
+    flex: 1 !important;
+    align-items: center !important;
+    justify-content: center !important;
 
 }
 
