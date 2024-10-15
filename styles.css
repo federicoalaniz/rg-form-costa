@@ -48,8 +48,8 @@ input[type='checkbox'], [type='radio'] {
 
 input[type='submit'] {
     background-color: orange !important;
-    height: 37px !important;
-    padding: 0 !important;
+    /* height: 37px !important; */
+    padding: 7px 20px !important;
 }
 
 
