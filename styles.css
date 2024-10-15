@@ -101,7 +101,7 @@ li{
 
 table {
     font-size: 20px !important;
-    background-color: yellow !important;
+    /* background-color: yellow !important; */
 }
 
 label.ui-button.ui-widget.ui-checkboxradio-radio-label.ui-controlgroup-item.ui-checkboxradio-label.ui-corner-left {
