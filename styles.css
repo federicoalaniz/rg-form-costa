@@ -12,6 +12,7 @@
     flex: 1 !important;
     align-items: center !important;
     justify-content: center !important;
+    vertical-align:middle !important;
 
 }
 
@@ -102,10 +103,6 @@ li{
 table {
     font-size: 20px !important;
 }
-
-tbody:nth-child(2) {
-    background-color: green;
-} 
 
 label.ui-button.ui-widget.ui-checkboxradio-radio-label.ui-controlgroup-item.ui-checkboxradio-label.ui-corner-left {
     margin-right: 30px;
