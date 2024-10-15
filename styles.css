@@ -110,4 +110,7 @@ label.ui-button.ui-widget.ui-checkboxradio-radio-label.ui-controlgroup-item.ui-c
 
 td#_sentido {
     background-color: aqua !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
