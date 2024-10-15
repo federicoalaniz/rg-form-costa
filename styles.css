@@ -103,3 +103,7 @@ table {
 tbody:nth-child(2) {
     background-color: green;
 } 
+
+label.ui-button.ui-widget.ui-checkboxradio-radio-label.ui-controlgroup-item.ui-checkboxradio-label.ui-corner-left {
+    margin-right: 30px;
+}
