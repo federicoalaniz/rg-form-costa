@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasajes a la Costa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="title">Pasajes a la Costa</h1>
+    <div class="container">
+
+        <!-- Paso 1: Selección de recorrido -->
+        <div class="step">
+            <span class="step-number">1</span>
+            <div class="step-container">
+                <h2>Seleccione recorrido</h2>
+                <div class="route-options">
+                    <label>
+                        <input type="radio" name="route" checked>
+                        Buenos Aires <span class="text-orange bold">→</span> Costa Atlántica
+                    </label>
+                    <label>
+                        <input type="radio" name="route">
+                        Costa Atlántica <span class="text-orange bold">→</span> Buenos Aires
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paso 2: Complete los datos -->
+        <div class="step mt-50">
+            <div>
+                <span class="step-number">2</span>
+            </div>
+            <div class="step-container">
+                <h2 class="">Complete los datos</h2>
+                <form>
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="origin">Origen</label>
+                            <select id="origin">
+                                <option>Barrio de Origen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destino</label>
+                            <select id="destination">
+                                <option>Barrio de Destino</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date" class="underline">Fecha</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-group passengers">
+                            <label class="pax underline" for="passengers">Pasajeros</label>
+                            <div class="cant-pax" id="passengers">
+                                <input type="number" id="passengers" value="1" min="1">
+                                <!-- boton de bebe en butaca -->
+                                <div class="button-check">
+                                    <input type="checkbox" id="baby-seat">
+                                    <img src="./baby_carriage.png" alt="baby" width="30" height="30">
+                                    <label for="baby-seat">
+                                        <span class="span-title">Bebé en butaca</span>
+                                        <span>$10.000.-</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="luggage-pets">
+                        <div class="form-group">
+                            <h3 class="underline">Equipaje</h3>
+                            <div class="luggage">
+                                <p>Su boleto incluye 1 maleta de hasta 23kg + 1 bolso de mano (cartera o mochila)</p>
+                                <div class="button-check">
+                                    <input type="checkbox" id="extra-bag">
+                                    <img src="./bag.png" alt="bag" width="30" height="30">
+                                    <label for="extra-bag">
+                                        <span class="span-title">Maleta Adicional 23kg</span>
+                                        <span>$10.000.-</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h3 class="underline">Mascotas</h3>
+                            <div class="pets">
+                                <div class="pet-button-check">
+                                    <input type="checkbox" id="pet-seat-1">
+                                    <label for="pet-seat-1">
+                                        <h4>Mascota en asiento</h4>
+                                        <span>Hasta 8kg</span>
+                                        <span>$10.000</span>
+                                    </label>
+                                </div>
+                                <div class="pet-button-check">
+                                    <input type="checkbox" id="pet-lap-1">
+                                    <label for="pet-lap-1">
+                                        <h4>Mascota en falda</h4>
+                                        <span>Hasta 8kg</span>
+                                        <span>$5.000</span>
+                                    </label>
+                                </div>
+                                <div class="pet-button-check">
+                                    <input type="checkbox" id="pet-seat-1">
+                                    <label for="pet-seat-1">
+                                        <h4>Segunda Mascota en asiento</h4>
+                                        <span>Hasta 8kg</span>
+                                        <span>$10.000</span>
+                                    </label>
+                                </div>
+                                <div class="pet-button-check">
+                                    <input type="checkbox" id="pet-lap-1">
+                                    <label for="pet-lap-1">
+                                        <h4>Segunda Mascota en falda</h4>
+                                        <span>Hasta 8kg</span>
+                                        <span>$5.000</span>
+                                    </label>
+                                </div>
+                                <div class="pet-button-check">
+                                    <input type="checkbox" id="pet-seat-1">
+                                    <label for="pet-seat-1">
+                                        <h4>Tercera Mascota en asiento</h4>
+                                        <span>Hasta 8kg</span>
+                                        <span>$10.000</span>
+                                    </label>
+                                </div>
+                                <div class="pet-button-check">
+                                    <input type="checkbox" id="pet-lap-1">
+                                    <label for="pet-lap-1">
+                                        <h4>Tercera Mascota en falda</h4>
+                                        <span>Hasta 8kg</span>
+                                        <span>$5.000</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="consult-button">Consultar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- Paso 3: Selecciona el servicio que deseas -->
+        <div class="step mt-50">
+            <span class="step-number">3</span>
+            <div class="step-container">
+                <h2>Selecciona el servicio que deseas</h2>
+                <div class="main">
+                    <div class="card">
+                        <div class="card-date">
+                            <span class="day-of-week">VIE</span>
+                            <span class="day">10</span>
+                            <span class="month">AGO</span>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-service">
+                                <span>23:00</span>
+                                CABA - Costa Chica / Costa Grande
+                            </div>
+                            <div class="card-price">$ 40.000</div>
+                            <div class="card-includes">
+                                Incluye 1 bolso de mano + 1 maleta de 23 Kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="underline text-xl pt-80">Otros servicios cercanos a la fecha</h3>
+                <div class="secondary">
+                    <div class="card">
+                        <div class="card-date">
+                            <span class="day-of-week">VIE</span>
+                            <span class="day">10</span>
+                            <span class="month">AGO</span>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-service">
+                                <span>23:00</span>
+                                CABA - Costa Chica / Costa Grande
+                            </div>
+                            <div class="card-price">$ 40.000</div>
+                            <div class="card-includes">
+                                Incluye 1 bolso de mano + 1 maleta de 23 Kg
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-date">
+                            <span class="day-of-week">VIE</span>
+                            <span class="day">10</span>
+                            <span class="month">AGO</span>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-service">
+                                <span>23:00</span>
+                                CABA - Costa Chica / Costa Grande
+                            </div>
+                            <div class="card-price">$ 40.000</div>
+                            <div class="card-includes">
+                                Incluye 1 bolso de mano + 1 maleta de 23 Kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blue-alert my-50">
+                    <div><span>!</span></div>
+                    <p>Los horarios son aproximados, el horario exacto en que llegará a su domicilio saldrá impreso en
+                        el boleto luego de realizada la compra</p>
+                </div>
+                <div class="button-container">
+
+                    <button class="consult-button">
+                        Continuar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Paso 4: Completa los datos -->
+        <div class="step mt-50">
+            <span class="step-number">4</span>
+            <div class="step-container">
+                <h2>Completa los datos</h2>
+                <div class="trip-form">
+                    <form>
+                        <h3 class="underline">Salida</h3>
+                        <div class="address">
+                            <input type="text" placeholder="Calle" />
+                            <div>
+                                <input type="text" placeholder="Número" />
+                                <input type="text" placeholder="Depto/Timbre/Otro" />
+                            </div>
+                            <input type="text" placeholder="Entre calles / referencia" />
+                        </div>
+                        <h3 class="underline">Destino</h3>
+                        <div class="address">
+                            <input type="text" placeholder="Calle" />
+                            <div>
+                                <input type="text" placeholder="Número" />
+                                <input type="text" placeholder="Depto/Timbre/Otro" />
+                            </div>
+                            <input type="text" placeholder="Entre calles / referencia" />
+                        </div>
+                        <h2 class="underline">Datos del pasajero</h2>
+                        <div class="passenger">
+                            <div class="personal-data form-group">
+                                <input type="text" placeholder="Nombre">
+                                <input type="text" placeholder="Apellido">
+                                <div class="document">
+                                    <select>
+                                        <option disabled selected>Documento</option>
+                                        <option>DNI</option>
+                                        <option>LC</option>
+                                        <option>LE</option>
+                                    </select>
+                                    <input type="text" placeholder="Número de documento">
+                                </div>
+                                <select>
+                                    <option disabled selected>Nacionalidad</option>
+                                    <option>LC</option>
+                                    <option>LE</option>
+                                </select>
+                                <div class="age-gender">
+                                    <select>
+                                        <option disabled selected>Edad</option>
+                                        <option>Adulto</option>
+                                        <option>Menor</option>
+                                    </select>
+                                    <div class="gender">
+                                        <label>
+                                            <input type="radio" name="gender">
+                                            Hombre
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender">
+                                            Mujer
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="underline">Datos de contacto</h3>
+                            <div class="blue-alert my-20">
+                                <div><span>!</span></div>
+                                <p><strong>IMPORTATE: </strong> Estos teléfonos son el único punto para poder
+                                    contactarte. En lo posible que el principal, o <strong>alguno de los dos sea una
+                                        línea de WhatsApp.</strong> Por último, <strong>revisa si lo has ingresado
+                                        correctamente</strong>, antes de seguir.</p>
+                            </div>
+                            <div class="contact-data form-group">
+                                <div class="phone">
+                                    <select>
+                                        <option disabled selected>Código de Área</option>
+                                        <option>+54</option>
+                                        <option>+55</option>
+                                        <option>+56</option>
+                                    </select>
+                                    <input type="text" placeholder="Nro de teléfono principal">
+                                </div>
+                                <input type="text" placeholder="Correo electrónico">
+                                <div class="phone">
+                                    <select>
+                                        <option disabled selected>Código de Área</option>
+                                        <option>+54</option>
+                                        <option>+55</option>
+                                        <option>+56</option>
+                                    </select>
+                                    <input type="text" placeholder="Nro de teléfono secundario">
+                                </div>
+                            </div>
+                            <textarea name="observations" id="observations" placeholder="Observaciones"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <div>
+                                <span>Total a pagar</span>
+                                <span>$ 43.000</span>
+                            </div>
+                            <button class="consult-button">Confirmar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Paso 5: Resumen de su reserva -->
+        <div class="step mt-50">
+            <span class="step-number">5</span>
+            <div class="step-container brief">
+                <h2>Resumen de su reserva</h2>
+                <table class="my-20">
+                    <thead>
+                        <th>Cantidad</th>
+                        <th>Recorrido</th>
+                        <th>Valor</th>
+                        <th></th>
+                    </thead>
+
+                    <body>
+                        <tr>
+                            <td>1 PAX</td>
+                            <td>Capital Federal, Belgrano - Hasta Costa del Este Centro. 10/08/2024, horario a confirmar
+                            </td>
+                            <td>$43.000</td>
+                            <td>
+                                <button class="border-none">
+                                    <img src="./delete_row.png" alt="delete">
+                                </button>
+                            </td>
+                        </tr>
+                    </body>
+                </table>
+                <div class="mp-message">
+                    <img src="./MercadoPago.png" alt="mp" width="141" height="37">
+                    <p>Para finalizar su compra ingrese su pago con su tarjeta haciendo click en <span>Comprar ticket a través de Mercado Pago.</span> Luego de que su pago haya sido aprobado por Mercado Pago, le enviaremos los boletos al email proporcionado dentro de las 24 hs. <span>Si supago no pudo ser acreditado, su reserva tiene 24 hs de vigencia para volver a intentarlo</span> sin tener que realizar el proceso nuevamente.</p>
+                </div>
+                <div class="comunication-info">
+                    <p>Cualquier duda comuniquese a los siguientes números <span>11 4702 6533 / 11 4703 1253</span> ó a <span>costa@ruggeriturismo.com</span></p>
+                </div>
+                <div class="footer-buttons">
+                    <button class="buy-return">Comprar Regreso</button>
+                    <button class="consult-button">Comprar Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
