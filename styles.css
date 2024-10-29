@@ -1,1 +1,116 @@
 /* Hoja de estilos para el form de Pasajes a la costa de RG */
+.ui-controlgroup .ui-controlgroup-item {
+    border-width: 2px !important;
+    border-radius: 10px !important;
+    background-color: white !important;
+    color: #10004f !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    padding: 10px 0px !important;
+    width: 350px !important;
+    flex: 1 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align:middle !important;
+
+}
+
+.ui-controlgroup .ui-controlgroup-item:hover {
+    border-color: orange !important;
+}
+
+.ui-checkboxradio-icon .ui-corner-all .ui-icon .ui-icon-background .ui-icon-blank {
+    accent-color: orange !important;
+}
+
+
+input {
+    border-radius: 5px !important;
+    font-size: 20px !important;
+    border-width: thin !important;
+    height: 37px !important;
+    border-color: gray !important;
+
+}
+
+input::placeholder {
+    font-size: 20px !important;
+    color: gray !important;
+    font-weight: 300 !important;
+}
+
+label {
+    font-size: large !important;
+}
+
+input[type='checkbox'], [type='radio'] {
+    accent-color: orange !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+input[type='submit'] {
+    background-color: orange !important;
+    /* height: 37px !important; */
+    padding: 7px 20px !important;
+}
+
+
+.selectbox .display {
+    border-radius: 5px !important;
+    font-size: 20px !important;
+    padding: 5px 10px !important;
+}
+
+.selectbox .display .arrow_btn{
+    height: 37px !important;
+    width: 35px !important;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.selectbox .display .arrow_btn:hover{
+    height: 37px !important;
+    width: 35px !important;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+.selectbox .display .arrow_btn:active{
+    height: 37px !important;
+    width: 35px !important;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+.selectbox .display .arrow_btn span {
+    left: 17.5px !important;
+    top: 17.5px !important;
+}
+
+li{
+    font-size: 20px !important;
+}
+
+.selectbox.items li>.item:hover {
+    background-color: orange;
+    color: white;
+}
+
+table {
+    font-size: 20px !important;
+    /* background-color: yellow !important; */
+}
+
+label.ui-button.ui-widget.ui-checkboxradio-radio-label.ui-controlgroup-item.ui-checkboxradio-label.ui-corner-left {
+    margin-right: 30px;
+}
+
+td#_sentido {
+    /* background-color: aqua !important; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
