@@ -360,10 +360,10 @@ input[type="text"] {
 }
 
 .secondary {
-    display: flex;
+    display: grid;
     width: 100%;
-    justify-content: space-between;
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .card-date {
